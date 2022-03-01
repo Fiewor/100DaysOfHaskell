@@ -1,4 +1,4 @@
-# Day 1 
+# Day 1 - What is Haskell?
 Note: this won't be so detailed as I didn't write this on the original day I began
 ## Learnt about haskell and what it is
 - It's purely functional language.
