@@ -24,16 +24,20 @@ ghci> [2,4..20]
 
 - Create infinte lists by not specifying an upper limit.
 
-A handful of functions that produce infinite lists:
+- There are some functions that produce infinite lists:
 
-cycle takes a list and cycles it into an infinite list. If you just try to display the result, it will go on forever so you have to slice it off somewhere.
-
+1. **cycle** takes a list and cycles it into an infinite list. If you just try to display the result, it will go on forever so you have to slice it off somewhere.
+```haskell
 ghci> take 10 (cycle [1,2,3])  
 [1,2,3,1,2,3,1,2,3,1]  
+```
+```haskell
 ghci> take 12 (cycle "LOL ")  
 "LOL LOL LOL "   
-repeat takes an element and produces an infinite list of just that element. It's like cycling a list with only one element.
-
+```
+2. **repeat** takes an element and produces an infinite list of just that element. It's like cycling a list with only one element.
+```haskell
 ghci> take 10 (repeat 5)  
 [5,5,5,5,5,5,5,5,5,5]  
-Although it's simpler to just use the replicate function if you want some number of the same element in a list. replicate 3 10 returns [10,10,10]
+```
+It's simpler to just use the **replicate** function if you want some number of the same element in a list. ``replicate 3 10`` returns ``[10,10,10]``
